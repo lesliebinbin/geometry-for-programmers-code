@@ -5,8 +5,8 @@ from matplotlib import ticker, cm
 from matplotlib import collections as mc
 from numpy import ma
 
-matplotlib.interactive(True)
-matplotlib.use('WebAgg')
+# matplotlib.interactive(True)
+# matplotlib.use('WebAgg')
 
 N = 100
 x = np.linspace(0, 10, N)
@@ -169,12 +169,14 @@ for segment in contour:
 
 
 # plot the result (uncomment the line you want to see intermediate results)
-#lc = mc.LineCollection(border)
-#lc = mc.LineCollection(contour)
+lc_border = mc.LineCollection(border)
+lc_contour = mc.LineCollection(contour)
 lc = mc.LineCollection(smoothened)
 
 lc.set_color("black")
 lc.set_linewidth(2)
 ax.add_collection(lc)
+ax.add_collection(lc_contour)
+ax.add_collection(lc_border)
 
 plt.show()
