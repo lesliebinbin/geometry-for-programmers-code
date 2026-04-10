@@ -54,3 +54,5 @@ From this chapter, the reader will learn more classical ways to model surfaces a
 
 ## 12. Modeling bodies with images and voxels
 In this chapter, the reader will learn about modeling bodies with 3D images and voxels. 3D images came to the software industry from medical applications such as computer tomography, but they are now used more and more in mechanical engineering too. This chapter showcases a few image processing techniques and explains a simple vectorization algorithm that turns images into contours.
+
+## Almost finish
